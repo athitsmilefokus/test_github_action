@@ -4,8 +4,14 @@ jobs:
     greeting: 
         runs-on: ubuntu-latest
         steps:
+            # - name: CLine Repo
+            #   uses: actions/checkout@v4
+            # - name: Setup nodejs
+            #   uses: actions/setup-node@v4
+            #   with:
+            #     node-version: 20
             - name: Hello World
               run: echo "Hello World"
             - name : echo server.js
-              run : node
+              run : node server.js
               
